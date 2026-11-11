@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+# fotos não devem ir para o repositório
+*.nef
+*.NEF
+convertidos_*/

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conversor-nef"
+version = "1.0.0"
+description = "Converte fotos RAW Nikon (.NEF) em lote para JPEG ou PNG"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["rawpy>=0.18", "Pillow>=10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+conversor-nef = "conversor_nef.cli:main"
+
+[tool.setuptools]
+packages = ["conversor_nef"]
